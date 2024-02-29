@@ -1,0 +1,90 @@
+:root {
+    --org-aspect: 275/37; /* room4 */
+    --org-aspect: 2481/464; /* room1 */
+    --org-aspect: 548/537; /* room2 */
+    --zoom: 1;
+    --aspect: calc(var(--org-aspect)/var(--zoom));
+}
+
+body {
+    background-color: black;
+    color: green;
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+input {
+    all: unset;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: var(--aspect); */
+}
+
+.back {
+    max-width: 100vw;
+    max-height: 65vh;
+    aspect-ratio: var(--aspect);
+    image-rendering: pixelated;
+    background: url('room2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    height: 65vh;
+}
+
+.title_flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.data_scroll {
+    overflow-y: auto;
+    flex-shrink: 1000000000;
+    flex-grow: 1;
+    padding: 1vw
+}
+
+.grid4 {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(1, 1fr)/repeat(4, 1fr);
+    justify-content: center;
+}
+
+.grid5 {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(1, 1fr)/repeat(5, 1fr);
+    justify-content: center;
+}
+
+.button {
+    justify-self: center;
+}
+
+log {
+    display: block;
+}
+
+.click:hover,
+.click:active,
+.green {
+    color: limegreen;
+}
+
+.width {
+    width: 100%;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}

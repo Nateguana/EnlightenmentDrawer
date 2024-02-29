@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enlightentment Drawer for Room 1</title>
+    <link rel="stylesheet" href="/enlight/enlight1.css">
+    <script src="/enlight/enlight1.js" defer></script>
+</head>
+
+<body>
+    <div class="title_flex">
+        <div class="back">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <div class="grid5">
+        <div class="button" onclick="reverse(this)">Reverse</div>
+        <div class="button click" onclick="run_event(1)">Discussed</div>
+        <div class="button click" onclick="run_event(2)">Photo</div>
+        <div class="button click" onclick="run_event(3)">Booklet</div>
+        <div class="button click" onclick="run_event(0)">Download</div>
+    </div>
+    <div id="types" class="grid4">
+        <div class="button" onclick="run_type(0)">Browser</div>
+        <div class="button" onclick="run_type(1)">Completionist</div>
+        <div class="button" onclick="run_type(2)">Goal Oriented</div>
+        <div class="button" onclick="run_type(3)">Pass Through</div>
+    </div>
+    <div class="title_flex">
+        <div id="title">Data for person
+            <input class="green" onchange="onUserChange(this)" type="number" id="userNum" min="0" max="65535" value="0">
+        </div>
+    </div>
+    <div class="data_scroll">
+        <div id="data"></div>
+        <div id="plus" class="green width"></div>
+    </div>
+</body>
+
+</html>

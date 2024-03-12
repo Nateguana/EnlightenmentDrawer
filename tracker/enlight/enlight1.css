@@ -29,7 +29,6 @@ canvas {
 
 .back {
     max-width: 100vw;
-    max-height: 50vh;
     aspect-ratio: var(--aspect);
     image-rendering: pixelated;
     background: url('room1.png');
